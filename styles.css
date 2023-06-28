@@ -167,6 +167,22 @@ header {
     padding-top: 1rem;
 }
 
+/*NFT-icons*/
+
+.section-NFT-icons-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 2rem;
+    list-style: none;   
+}
+
+.section-NFT-icons-list-item{
+    max-width: 3rem;
+    gap: 2rem;
+    margin: 1rem;  
+}
+
 /*media*/
     
 @media only screen and (max-width: 768px) {
@@ -201,7 +217,7 @@ header {
         width: 50vh;
     }
 
-    /*free-NFT*/
+/*free-NFT*/
 
 .section-free-NFT {
     margin: 2rem;
@@ -216,4 +232,21 @@ header {
 .section-free-NFT-text {
     padding-top: 1rem;
 }
+
+/*NFT-icons*/
+
+/*.section-NFT-icons-list {
+    display: flex;
+    flex-direction: row;
+    row-gap: 25px;
+    margin: 2rem;
+    list-style: none;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}*/
+
+.section-NFT-icons-list{
+    grid-template-columns: auto auto auto auto auto;
+}
+
 }
