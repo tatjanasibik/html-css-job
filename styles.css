@@ -1,3 +1,4 @@
+/*common*/
 
 * {
     margin: 0;
@@ -7,15 +8,31 @@
 :root {
     --pink: #FC45AA;
     --grey: #757575;
+    --white: #010101;
+    --green: #86DC3D;
 }
 
 html {
-    background: white;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    width: 40vh;
+}
+
+.logo {
+    height: 30px;
+    padding-top: 2px;
+}
+
+/*header*/
 
 header {
     margin: 2rem;
@@ -74,16 +91,14 @@ header {
 
 .hamburger-menu a:hover {
     background-color: var(--grey);
-    color: #fff;
+    color: var(--white);
 }
 
-  .main-wrapper {
+.main-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 10vh;
 }
-
-
 
 .hamburger-menu {
         background-color: #fff;
@@ -97,8 +112,62 @@ header {
     }
 
 .hamburger-menu a {
-        color: black;
+    color: var(--black);;
     }
+
+/*section-hero*/
+
+.section-hero {
+    height: 45vh;
+    background-image: url("assets/graphic.svg");
+    background-position: right -200px top -45px;
+    background-size: 50vh;
+    background-repeat: no-repeat;
+}
+
+.section-hero-info {
+    margin: 2rem;
+}
+
+.section-hero-note {
+    color: var(--pink);
+    margin-bottom: 25px;
+}
+
+.section-hero-text {
+    margin-top: 25px;
+    width: 25vh;
+}
+
+.section-hero-button {
+    padding: 15px 35px;
+    margin-top: 25px;
+    background-color: inherit;
+    width: auto;
+    font-weight: 700;
+    border-radius: 25px;
+    border-color: var(--pink) var(--green) var(--pink)  var(--pink);
+}
+
+/*free-NFT*/
+
+.section-free-NFT {
+    height: 35vh;
+    background-image: url("assets/background.svg");
+    background-position: right -50px top -45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-free-NFT-info {
+    padding: 6rem 2rem;
+}
+
+.section-free-NFT-text {
+    padding-top: 1rem;
+}
+
+/*media*/
     
 @media only screen and (max-width: 768px) {
     nav {
@@ -114,9 +183,37 @@ header {
   }
 
 @media screen and (min-width: 769px){
+    /*nav*/
     .nav-list-item {
         list-style: none;
         margin-right: 2rem;
         color: var(--grey);
     }
+
+    /*section-hero*/
+
+    .section-hero {
+        background-position: right 30% top -45px;
+    }
+    
+    .section-hero-text {
+        margin-top: 25px;
+        width: 50vh;
+    }
+
+    /*free-NFT*/
+
+.section-free-NFT {
+    margin: 2rem;
+    border-radius: 25px 25px;
+    background-position: right 0px top 0px;
+}
+
+.section-free-NFT-info {
+    padding: 9rem 2rem;
+}
+
+.section-free-NFT-text {
+    padding-top: 1rem;
+}
 }
