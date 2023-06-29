@@ -1,0 +1,466 @@
+/*common*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pink: #FC45AA;
+    --grey: #757575;
+    --white: #010101;
+    --green: #86DC3D;
+    --lightgrey: #ECECEC;
+    --orange: #F26C36;
+}
+
+html {
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.logo {
+    height: 30px;
+    padding-top: 2px;
+}
+
+.horizontal-line {
+    border-top: 3px solid var(--lightgrey);
+    margin: 0rem 2rem;
+  }
+
+/*header*/
+
+header {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list-item {
+    list-style: none;
+    margin-right: 0.5rem;
+    color: var(--grey);
+}
+
+.nav-list-item:last-child {
+    color: var(--pink);
+}
+
+.hamburger-button img {
+    width: 2rem;
+}
+
+.hamburger-button {
+    align-self: stretch;
+    display: none;
+    padding: 0 1rem;
+}
+
+.hamburger-button img {
+    width: 2rem;
+}
+
+.hamburger-button:focus-within .hamburger-menu,
+.hamburger-button:hover .hamburger-menu {
+    display: flex;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    left: 0;
+    padding: 1rem 0;
+    position: absolute;
+    top: 5rem;
+    width: 100vw;
+}
+
+.hamburger-menu a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.hamburger-menu a:hover {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+}
+
+.hamburger-menu {
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    left: 0;
+    padding: 1rem 0;
+    position: absolute;
+    top: 5rem;
+    width: 100vw;
+    }
+
+.hamburger-menu a {
+    color: var(--black);;
+    }
+
+/*section-hero*/
+
+.section-hero {
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-image: url("assets/graphic.svg");
+    background-size: 50vh;
+    background-position: right -200px top -45px;
+}
+
+.section-hero-info {
+    margin: 2rem;
+}
+
+.section-hero-note {
+    color: var(--pink);
+    margin-bottom: 25px;
+}
+
+.section-hero h1 {
+    width: 40vh;
+}
+
+.section-hero-text {
+    margin-top: 25px;
+    width: 25vh;
+}
+
+.section-hero-button, .section-hero-2-button {
+    padding: 15px 35px;
+    margin-top: 25px;
+    background-color: inherit;
+    width: auto;
+    font-weight: 700;
+    border-radius: 25px;
+    border-color: var(--pink) var(--green) var(--pink)  var(--pink);
+}
+
+/*free-NFT*/
+
+.section-free-NFT {
+    height: 35vh;
+    background-image: url("assets/background.svg");
+    background-position: right -50px top -45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-free-NFT-info {
+    padding: 6rem 2rem;
+}
+
+.section-free-NFT-text {
+    padding-top: 1rem;
+}
+
+/*NFT-icons*/
+
+.section-NFT-icons-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 2rem;
+    list-style: none;   
+}
+
+.section-NFT-icons-list-item{
+    max-width: 3rem;
+    gap: 2rem;
+    margin: 1rem;  
+}
+
+/*section-auction*/
+
+.section-auction {
+    margin: 2rem;
+}
+
+.section-auction-text {
+    padding-top: 1rem;
+    color: var(--black);
+}
+
+.section-auction-text a{
+    text-decoration: underline;
+}
+
+.section-auction-cards {
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.card-container-left-side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-container-right-side-info, .card-container-left-side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.section-auction-cards-card {
+   width: 290px; 
+   border-radius: 10px;
+   background-color: var(--lightgrey);
+}
+
+.card-container-left-side-info h6 {
+    color: var(--orange);
+}
+
+.card-container-right-side-info h6 {
+    color: var(--grey);
+}
+
+.left-side-info-name, .right-side-info-name {
+    font-weight: bold;
+}
+
+.left-side-info-number, .right-side-info-number {
+    color: var(--grey);
+}
+
+.section-auction-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+/*section-hero-2*/
+
+.section-hero-2 {
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-image: url("assets/upsell-footer-image.svg");
+    background-size: 20vh;
+    background-position: right 40px top 100px;
+    margin-bottom: 0px;
+}
+
+.section-hero-2 h1 {
+    width: 25vh;
+}
+
+.section-hero-2-info {
+    margin: 2rem;
+}
+
+.section-hero-2-note {
+    color: var(--pink);
+    margin-bottom: 25px;
+}
+
+.section-hero-2-text {
+    margin-top: 25px;
+    width: 20vh;
+}
+
+.section-hero-2-transparent-line {
+    border-top: 3px solid var(--lightgrey);
+    opacity: 0.5;
+}
+
+.section-hero-2-button-line {
+    border-top: 3px solid var(--lightgrey);
+    margin: 0rem 2rem;
+}
+
+/*footer*/
+
+footer {
+    height: 10vh;
+    margin: 2rem;
+    color: var(--grey);
+    /*display: flex;*/
+    gap: 2rem;
+}
+
+.footer-common-part-soc-media-list {
+    list-style: none;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-common-part-logo {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+.footer-common-part-text {
+    padding-bottom: 1rem;
+}
+
+.footer-common-part-soc-media-list img {
+    width: 25px;
+}
+
+.tiktok {
+    height: 22px;
+}
+
+.footer-additional-part {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    margin-left: auto;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-additional-part-item-list {
+    list-style: none;
+}
+
+.footer-additional-part-list-item {
+    padding-top: 0.5rem;
+}
+
+.footer-additional-part-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.footer-copyright-part {
+    padding: 2rem 0rem;
+}
+
+.copyright-hidden-part {
+    visibility: hidden;
+}
+
+/*media*/
+    
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger-button {
+        align-items: right;
+        background-color: transparent;
+        border: none;
+        display: flex;
+    }
+  }
+
+@media screen and (min-width: 769px){
+    /*nav*/
+    .nav-list-item {
+        list-style: none;
+        margin-right: 2rem;
+        color: var(--grey);
+    }
+
+    /*section-hero*/
+
+    .section-hero {
+        background-position: right 30% top -45px;
+    }
+    
+    .section-hero-text {
+        margin-top: 25px;
+        width: 50vh;
+    }
+
+/*free-NFT*/
+
+.section-free-NFT {
+    margin: 2rem;
+    border-radius: 25px 25px;
+    background-position: right 0px top 0px;
+}
+
+.section-free-NFT-info {
+    padding: 9rem 2rem;
+}
+
+.section-free-NFT-text {
+    padding-top: 1rem;
+}
+
+/*NFT-icons*/
+
+.section-NFT-icons-list{
+    grid-template-columns: auto auto auto auto auto;
+}
+
+/*auction*/
+.section-auction-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*section-hero-2*/
+.section-hero-2-transparent-line {
+    visibility: hidden;
+}
+
+/*footer*/
+
+.copyright-hidden-part {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.footer-copyright-part {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.footer-copyright-part-element {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto;
+}
+
+.footer-elements-both-parts {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+}
+
