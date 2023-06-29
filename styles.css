@@ -26,7 +26,6 @@ a {
 h1 {
     font-weight: 900;
     font-size: 50px;
-    width: 40vh;
 }
 
 .logo {
@@ -34,9 +33,9 @@ h1 {
     padding-top: 2px;
 }
 
-hr {
+.horizontal-line {
     border-top: 3px solid var(--lightgrey);
-    margin: 5rem 2rem;
+    margin: 0rem 2rem;
   }
 
 /*header*/
@@ -108,14 +107,14 @@ header {
 }
 
 .hamburger-menu {
-        background-color: #fff;
-        display: none;
-        flex-direction: column;
-        left: 0;
-        padding: 1rem 0;
-        position: absolute;
-        top: 5rem;
-        width: 100vw;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    left: 0;
+    padding: 1rem 0;
+    position: absolute;
+    top: 5rem;
+    width: 100vw;
     }
 
 .hamburger-menu a {
@@ -126,10 +125,10 @@ header {
 
 .section-hero {
     height: 45vh;
-    background-image: url("assets/graphic.svg");
-    background-position: right -200px top -45px;
-    background-size: 50vh;
     background-repeat: no-repeat;
+    background-image: url("assets/graphic.svg");
+    background-size: 50vh;
+    background-position: right -200px top -45px;
 }
 
 .section-hero-info {
@@ -141,12 +140,16 @@ header {
     margin-bottom: 25px;
 }
 
+.section-hero h1 {
+    width: 40vh;
+}
+
 .section-hero-text {
     margin-top: 25px;
     width: 25vh;
 }
 
-.section-hero-button {
+.section-hero-button, .section-hero-2-button {
     padding: 15px 35px;
     margin-top: 25px;
     background-color: inherit;
@@ -217,7 +220,7 @@ header {
     justify-content: space-between;
 }
 
-card-container-left-side-info {
+.card-container-left-side-info {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -261,7 +264,112 @@ card-container-left-side-info {
     overflow-x: hidden;
 }
 
+/*section-hero-2*/
 
+.section-hero-2 {
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-image: url("assets/upsell-footer-image.svg");
+    background-size: 20vh;
+    background-position: right 40px top 100px;
+    margin-bottom: 0px;
+}
+
+.section-hero-2 h1 {
+    width: 25vh;
+}
+
+.section-hero-2-info {
+    margin: 2rem;
+}
+
+.section-hero-2-note {
+    color: var(--pink);
+    margin-bottom: 25px;
+}
+
+.section-hero-2-text {
+    margin-top: 25px;
+    width: 20vh;
+}
+
+.section-hero-2-transparent-line {
+    border-top: 3px solid var(--lightgrey);
+    opacity: 0.5;
+}
+
+.section-hero-2-button-line {
+    border-top: 3px solid var(--lightgrey);
+    margin: 0rem 2rem;
+}
+
+/*footer*/
+
+footer {
+    height: 10vh;
+    margin: 2rem;
+    color: var(--grey);
+    /*display: flex;*/
+    gap: 2rem;
+}
+
+.footer-common-part-soc-media-list {
+    list-style: none;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-common-part-logo {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+.footer-common-part-text {
+    padding-bottom: 1rem;
+}
+
+.footer-common-part-soc-media-list img {
+    width: 25px;
+}
+
+.tiktok {
+    height: 22px;
+}
+
+.footer-additional-part {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    margin-left: auto;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-additional-part-item-list {
+    list-style: none;
+}
+
+.footer-additional-part-list-item {
+    padding-top: 0.5rem;
+}
+
+.footer-additional-part-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.footer-copyright-part {
+    padding: 2rem 0rem;
+}
+
+.copyright-hidden-part {
+    visibility: hidden;
+}
 
 /*media*/
     
@@ -325,5 +433,34 @@ card-container-left-side-info {
     gap: 20px;
 }
 
+/*section-hero-2*/
+.section-hero-2-transparent-line {
+    visibility: hidden;
+}
+
+/*footer*/
+
+.copyright-hidden-part {
+    visibility: visible;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.footer-copyright-part {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.footer-copyright-part-element {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto;
+}
+
+.footer-elements-both-parts {
+    display: grid;
+    grid-template-columns: auto auto;
+}
 }
 
