@@ -10,6 +10,8 @@
     --grey: #757575;
     --white: #010101;
     --green: #86DC3D;
+    --lightgrey: #ECECEC;
+    --orange: #F26C36;
 }
 
 html {
@@ -31,6 +33,11 @@ h1 {
     height: 30px;
     padding-top: 2px;
 }
+
+hr {
+    border-top: 3px solid var(--lightgrey);
+    margin: 5rem 2rem;
+  }
 
 /*header*/
 
@@ -183,6 +190,79 @@ header {
     margin: 1rem;  
 }
 
+/*section-auction*/
+
+.section-auction {
+    margin: 2rem;
+}
+
+.section-auction-text {
+    padding-top: 1rem;
+    color: var(--black);
+}
+
+.section-auction-text a{
+    text-decoration: underline;
+}
+
+.section-auction-cards {
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+card-container-left-side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card-container-right-side-info, .card-container-left-side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.section-auction-cards-card {
+   width: 290px; 
+   border-radius: 10px;
+   background-color: var(--lightgrey);
+}
+
+.card-container-left-side-info h6 {
+    color: var(--orange);
+}
+
+.card-container-right-side-info h6 {
+    color: var(--grey);
+}
+
+.left-side-info-name, .right-side-info-name {
+    font-weight: bold;
+}
+
+.left-side-info-number, .right-side-info-number {
+    color: var(--grey);
+}
+
+.section-auction-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+
+
 /*media*/
     
 @media only screen and (max-width: 768px) {
@@ -235,18 +315,15 @@ header {
 
 /*NFT-icons*/
 
-/*.section-NFT-icons-list {
-    display: flex;
-    flex-direction: row;
-    row-gap: 25px;
-    margin: 2rem;
-    list-style: none;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}*/
-
 .section-NFT-icons-list{
     grid-template-columns: auto auto auto auto auto;
 }
 
+/*auction*/
+.section-auction-cards {
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+}
+
